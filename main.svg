@@ -89,7 +89,7 @@
 
   <!-- Branch blocks -->
   <g class="branches">
-    <rect class="stable" x="80" y="24" width="60" height="30" />
+    <rect class="stable" x="73.42465753424658" y="24" width="60" height="30" />
     <rect class="security" x="133.26027397260273" y="24" width="60" height="30" />
 
     <rect class="stable" x="129.64383561643837" y="54" width="60" height="30" />

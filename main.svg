@@ -70,12 +70,12 @@
         <text x="20" y="99">
           5.0        </text>
       </g>
-          <g class="security">
+          <g class="stable">
         <rect x="0" y="114" width="40" height="30" />
         <text x="20" y="129">
           5.1        </text>
       </g>
-          <g class="stable">
+          <g class="eol">
         <rect x="0" y="144" width="40" height="30" />
         <text x="20" y="159">
           5.2        </text>

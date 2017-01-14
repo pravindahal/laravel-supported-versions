@@ -85,168 +85,26 @@
   </tr>
 </table>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 970 228" width="970" height="228">
-  <style type="text/css">
-    <![CDATA[
-      @import url(/fonts/Fira/fira.css);
-
-      text {
-        fill: #333;
-        font-family: "Fira Sans", "Source Sans Pro", Helvetica, Arial, sans-serif;
-        font-size: 16px;
-      }
-
-      g.eol rect,
-      .branches rect.eol {
-        fill: #f33;
-      }
-
-      g.eol text {
-        fill: white;
-      }
-
-      g.security rect,
-      .branches rect.security {
-        fill: #f93;
-      }
-
-      g.stable rect,
-      .branches rect.stable {
-        fill: #9c9;
-      }
-
-      .branch-labels text {
-        alignment-baseline: central;
-        text-anchor: middle;
-      }
-
-      .today line {
-        stroke: #f33;
-        stroke-dasharray: 7,7;
-        stroke-width: 3px;
-      }
-
-      .today text {
-        fill: #f33;
-        text-anchor: middle;
-      }
-
-      .years line {
-        stroke: black;
-      }
-
-      .years text {
-        text-anchor: middle;
-      }
-    ]]>
-  </style>
-
-  <!-- Branch labels -->
-  <g class="branch-labels">
-          <g class="eol">
-        <rect x="0" y="24" width="40" height="30" />
-        <text x="20" y="39">
-          4.1        </text>
-      </g>
-          <g class="eol">
-        <rect x="0" y="54" width="40" height="30" />
-        <text x="20" y="69">
-          4.2        </text>
-      </g>
-          <g class="eol">
-        <rect x="0" y="84" width="40" height="30" />
-        <text x="20" y="99">
-          5.0        </text>
-      </g>
-          <g class="security">
-        <rect x="0" y="114" width="40" height="30" />
-        <text x="20" y="129">
-          5.1        </text>
-      </g>
-          <g class="stable">
-        <rect x="0" y="144" width="40" height="30" />
-        <text x="20" y="159">
-          5.2        </text>
-      </g>
-          <g class="stable">
-        <rect x="0" y="174" width="40" height="30" />
-        <text x="20" y="189">
-          5.3        </text>
-      </g>
-      </g>
-
-  <!-- Branch blocks -->
-  <g class="branches">
-    <rect class="stable" x="80" y="24" width="60" height="30" />
-    <rect class="security" x="133.26027397260273" y="24" width="60" height="30" />
-
-    <rect class="stable" x="129.64383561643837" y="54" width="60" height="30" />
-    <rect class="security" x="189.8082191780822" y="54" width="60" height="30" />
-
-    <rect class="stable" x="211.17808219178082" y="84" width="60" height="30" />
-    <rect class="security" x="270.68493150684935" y="84" width="60" height="30" />
-
-    <rect class="stable" x="252.27397260273972" y="114" width="240" height="30" />
-    <rect class="security" x="492.6027397260274" y="114" width="120" height="30" />
-
-    <rect class="stable" x="316.3835616438356" y="144" width="60" height="30" />
-    <rect class="security" x="376.54794520547944" y="144" width="60" height="30" />
-
-    <rect class="stable" x="397.26027397260276" y="174" width="60" height="30" />
-    <rect class="security" x="457.75342465753425" y="174" width="60" height="30" />
-  </g>
-
-  <!-- Year lines -->
-  <g class="years">
-          <line x1="80" y1="24" x2="80" y2="204" />
-      <text x="80" y="19.2">
-        1 Jan 2014      </text>
-          <line x1="199.92114773847" y1="24" x2="199.92114773847" y2="204" />
-      <text x="199.92114773847" y="19.2">
-        1 Jan 2015      </text>
-          <line x1="319.84229547695" y1="24" x2="319.84229547695" y2="204" />
-      <text x="319.84229547695" y="19.2">
-        1 Jan 2016      </text>
-          <line x1="440.09199430511" y1="24" x2="440.09199430511" y2="204" />
-      <text x="440.09199430511" y="19.2">
-        1 Jan 2017      </text>
-          <line x1="560.01314204359" y1="24" x2="560.01314204359" y2="204" />
-      <text x="560.01314204359" y="19.2">
-        1 Jan 2018      </text>
-          <line x1="679.93428978206" y1="24" x2="679.93428978206" y2="204" />
-      <text x="679.93428978206" y="19.2">
-        1 Jan 2019      </text>
-          <line x1="799.85543752053" y1="24" x2="799.85543752053" y2="204" />
-      <text x="799.85543752053" y="19.2">
-        1 Jan 2020      </text>
-          <line x1="920.1051363487" y1="24" x2="920.1051363487" y2="204" />
-      <text x="920.1051363487" y="19.2">
-        1 Jan 2021      </text>
-      </g>
-
-  <!-- Today -->
-  <g class="today">
-    <line id="line-today" x1="" y1="24" x2="" y2="204" />
-    <text id="date-today" x="" y="223.2"></text>
-  </g>
-</svg>
+<object id="main-svg" class="svgClass" type="image/svg+xml" data="main.svg"></object>
 
 <script>
 var timeagoInstance = new timeago();
 timeagoInstance.render(document.querySelectorAll('.timeago'));
 
-var d = new Date();
-var timeAfterBeginningOfYear = d - new Date('1 Jan 2014');
-timeAfterBeginningOfYear /= 1000;
-timeAfterBeginningOfYear /= 3600;
-timeAfterBeginningOfYear /= 24;
-timeAfterBeginningOfYear = Math.round(timeAfterBeginningOfYear);
-var lineX = timeAfterBeginningOfYear * 120 / 365 + 80;
-document.getElementById('date-today').innerHTML = (new Date()).toDateString();
-document.getElementById('date-today').setAttribute('x', lineX);
-document.getElementById('line-today').innerHTML = (new Date()).toDateString();
-document.getElementById('line-today').setAttribute('x1', lineX);
-document.getElementById('line-today').setAttribute('x2', lineX);
+document.getElementById('main-svg').onload = function() {
+    var d = new Date();
+    var timeAfterBeginningOfYear = d - new Date('1 Jan 2014');
+    timeAfterBeginningOfYear /= 1000;
+    timeAfterBeginningOfYear /= 3600;
+    timeAfterBeginningOfYear /= 24;
+    timeAfterBeginningOfYear = Math.round(timeAfterBeginningOfYear);
+    var lineX = timeAfterBeginningOfYear * 120 / 365 + 80;
+    document.querySelector(".svgClass").getSVGDocument().getElementById('date-today').innerHTML = (new Date()).toDateString();
+    document.querySelector(".svgClass").getSVGDocument().getElementById('date-today').setAttribute('x', lineX);
+    document.querySelector(".svgClass").getSVGDocument().getElementById('line-today').innerHTML = (new Date()).toDateString();
+    document.querySelector(".svgClass").getSVGDocument().getElementById('line-today').setAttribute('x1', lineX);
+    document.querySelector(".svgClass").getSVGDocument().getElementById('line-today').setAttribute('x2', lineX);
+};
 </script>
 </body>
 </html>

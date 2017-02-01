@@ -6,3 +6,4 @@
 
 - Dynamic HTML generation
 - Dynamic SVG generation
+- Auto-update picture in Readme

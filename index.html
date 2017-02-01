@@ -85,9 +85,20 @@
             <td>23 Aug 2017</td>
             <td class="collapse-phone"><em class="timeago" datetime="23 Aug 2017"></em></td>
         </tr>
+        <tr class="stable">
+            <td>
+                <a href="#">5.4</a>
+            </td>
+            <td>24 Jan 2017</td>
+            <td class="collapse-phone"><em class="timeago" datetime="24 Jan 2017"></em></td>
+            <td>24 July 2017</td>
+            <td class="collapse-phone"><em class="timeago" datetime="24 July 2017"></em></td>
+            <td>24 Jan 2018</td>
+            <td class="collapse-phone"><em class="timeago" datetime="24 Jan 2018"></em></td>
+        </tr>
     </table>
 
-    <object id="main-svg" class="svgClass" type="image/svg+xml" data="main-static.svg"></object>
+    <object id="main-svg" class="svgClass" type="image/svg+xml" data="main-static-2017-02-01.svg"></object>
 
     <script>
         var timeagoInstance = new timeago();
@@ -103,9 +114,11 @@
             var lineX = timeAfterBeginningOfYear * 120 / 365 + 80;
             document.querySelector(".svgClass").getSVGDocument().getElementById('date-today').innerHTML = (new Date()).toDateString();
             document.querySelector(".svgClass").getSVGDocument().getElementById('date-today').setAttribute('x', lineX);
+            document.querySelector(".svgClass").getSVGDocument().getElementById('date-today').setAttribute('style', '');
             document.querySelector(".svgClass").getSVGDocument().getElementById('line-today').innerHTML = (new Date()).toDateString();
             document.querySelector(".svgClass").getSVGDocument().getElementById('line-today').setAttribute('x1', lineX);
             document.querySelector(".svgClass").getSVGDocument().getElementById('line-today').setAttribute('x2', lineX);
+            document.querySelector(".svgClass").getSVGDocument().getElementById('line-today').setAttribute('style', '');
         };
     </script>
 </body>

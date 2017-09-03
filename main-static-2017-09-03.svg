@@ -85,13 +85,13 @@
                 5.2
             </text>
         </g>
-        <g class="security">
+        <g class="eol">
             <rect x="0" y="174" width="40" height="30"/>
             <text x="20" y="189">
                 5.3
             </text>
         </g>
-        <g class="stable">
+        <g class="security">
             <rect x="0" y="204" width="40" height="30"/>
             <text x="20" y="219">
                 5.4
